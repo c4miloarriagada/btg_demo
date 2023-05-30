@@ -1,0 +1,119 @@
+@import url('../../index.css');
+
+
+.container{
+    display: flex;
+    color: var(--background-secondary);
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    position: relative;
+}
+
+
+.select{
+    font-size: 14px;
+    margin-top: 10px;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    justify-content: space-evenly;
+    background-color: var(--font-color-secondary);
+    animation: fadeIn 3s;
+    
+
+}
+
+.select p{
+    font-weight: 500;
+    
+}
+
+.select:hover{
+    border: 1px solid var(--background-secondary);
+    cursor:pointer;
+}
+
+
+.options_check{
+    list-style: none;
+    background-color: var(  --color-primary);
+    position: absolute;
+    width: 195px;
+    top: 75px;
+    left: 5px;
+    display: grid;
+    grid-template-rows: minmax(25px, 1fr) minmax(25px, 1fr);
+    border-radius: var(--border-radius);
+    padding: 15px 0px 10px 0px;
+    gap: 8px;
+
+
+}
+
+
+
+.options_check li{
+   height: 30px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-right: 5px;
+    align-items: center;
+
+ 
+}
+
+.options_check label{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.options_check li:hover{
+    background-color: var(--footer-background);
+    margin: 0; 
+    & span{
+        background-color: var(--background-secondary)
+    }
+}
+
+.options_check li span{
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--footer-background);
+
+}
+
+
+.select_active{
+    background-color: var(--color-primary);
+    margin-top: 10px;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 500x;
+
+    
+}
+
+.select_active p{
+    font-weight: 500;
+    
+}
+
+.select_active :hover{
+    cursor:pointer;
+}
+
+.active{
+    background-color: var(--background-secondary) !important;
+}

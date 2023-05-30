@@ -1,0 +1,54 @@
+@import url('../../index.css');
+
+
+.home_container{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-primary);
+    grid-template-rows: 20% 30% 50% ;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    
+}
+
+@media (max-width: 1200px) {
+    .home_container{
+        width: 1000px;
+    }
+}
+
+.home_component{
+    display: grid;
+    margin-top: 10px;
+  
+}
+
+.home_component:nth-child(1){
+    grid-template-rows: 30% 70%;
+}
+.home_component:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    height: 640px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content:nth-child(1){
+    height: 100%;
+    width: 45%;
+  
+
+}
+
+.content:nth-child(2){
+    height: 100%;
+    width: 54%;
+    
+
+}
+

@@ -1,0 +1,57 @@
+@import url(//db.onlinewebfonts.com/c/0c3856a335fdfdb8b0652f7c3d367fdd?family=Moderat);
+
+:root {
+  --background-primary: #e5e7ea;
+  --background-secondary: #ffffff;
+  --font-color-primary: #0f1223;
+  --font-color-secondary: #6e748e;
+  --color-primary: #195ab6;
+  --header-height: 56px;
+  --container-width: 1100px;
+  --footer-background: #05132a;
+  --border-radius: 8px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Moderat", sans-serif;
+  
+}
+
+
+body{
+  background-color: var(--background-primary);
+}
+
+
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

@@ -1,0 +1,11 @@
+@import url('../../index.css');
+
+.container{
+    height: 800px;
+    display: grid;
+    grid-template-columns: var(--container-width);
+    justify-content: center;
+    margin-top: 10px;
+    animation: fadeIn 3s;
+}
+

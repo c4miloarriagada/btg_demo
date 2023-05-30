@@ -1,0 +1,69 @@
+@import url('../../index.css');
+
+
+
+.header{
+    z-index: 999;
+    background-color: var(--background-secondary);
+    height: var( --header-height);
+    display: flex;
+    justify-content: center;
+    color: var(--font-color-primary);
+    position: sticky;
+    width: 100%;
+    top: 0;
+   
+}
+
+.menu{
+    width: var(--container-width);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.menu img{
+    height: var(--header-height);
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    gap:20px;
+    align-items: center;
+
+
+}
+
+.menu li:hover{
+    
+    cursor: pointer;
+}
+
+/* .sub-menu-toggle{
+    
+}
+/*aqui pongo el btn invertir*/
+
+.menu ul div{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--background-secondary);
+    width: 135px;
+    height: 35px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.menu li:nth-child(4) div {
+    background-color: var(--background-secondary);
+    color: var(--color-primary);
+    border: solid 1px var(--color-primary);
+}
+
+.menu ul div svg{
+    margin-right: 5px;
+}

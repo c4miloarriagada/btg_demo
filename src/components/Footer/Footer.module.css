@@ -1,0 +1,68 @@
+@import url('../../index.css');
+
+
+.container{
+    background-color: var(--footer-background);
+    height: 600px;
+    color: var(--background-secondary);
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+
+   
+}
+
+.container a:hover{
+    cursor: pointer;
+    border-bottom: 1px solid var(--background-secondary);
+}
+
+.grid_item{
+    width: var(--container-width);
+    border-bottom: 1px solid #a7aaad;
+    padding-bottom: 10px;
+}
+
+.grid_item:nth-child(1){
+    margin-top: 25px;
+    padding-bottom: 35px;
+}
+
+.grid_item:nth-child(2){
+    margin-top: 25px;
+    display: grid;
+    height:100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px; 
+}
+
+.grid_item:nth-child(2) p{
+    border-bottom:  1px solid var(--background-secondary);
+}
+
+.grid_item:last-child{
+    margin-top: 15px;
+    border: none;
+}
+
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+
+.footer_info h3{
+    color: var(--color-primary);
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.grid_item img{
+    width: 200px;
+}
+
+.footer_legal{
+    color: #a7aaad;
+    font-size: 12px;
+}
